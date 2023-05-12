@@ -1,0 +1,194 @@
+
+
+* {
+    margin: 0;
+    height:auto;
+    max-width: auto;
+    background-color:#4db5fa;
+    padding:none;
+    color:white;
+    font-family: 'Raleway';
+   
+  
+    }
+    
+    .mySlides {
+    display: none;
+    }
+    
+    img {
+    vertical-align: middle;
+    }
+    
+    /* Slideshow container */
+    
+    .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    }
+    
+    /*buttons */
+    
+    .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    
+    .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+    
+    
+    .prev:hover, .next:hover {
+    background-color: pink;
+    }
+    
+    
+  
+    
+    /* The dots/bullets/indicators */
+    
+    .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: purple;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+    background-color: pink;
+    }
+    
+    /* Fading animation */
+    
+    .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+    from {
+    opacity: .4;
+    }
+    to {
+    opacity: 1;
+    }
+    }
+    
+    /* On smaller screens, decrease text size */
+    
+    @media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+    font-size: 11px;
+    }
+    }
+    
+    /* Navigation menu */
+    
+    .topnav {
+    overflow: hidden;
+    
+    }
+    
+    .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+    
+    .topnav a:hover {
+    background-color: #a98bf7;
+    color: white;
+    }
+    
+    .topnav a.active {
+    background-color: ;
+    color: white;
+    }
+    
+    /* Header */
+    
+    .header {
+   
+    padding:20px;
+    text-align: center;
+  
+    }
+    
+
+/* Three image containers  */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+    
+    @media screen and (max-width:600px) {
+    .column {
+      width
+  
+   
+    
+    footer {
+      text-align: center;
+      padding: 0.1em;
+    }
+    
+    footer p {
+      margin: 0;
+    }
+    
+    .back-to-top {
+      text-align: right;
+      text-decoration: none;
+      padding: 3em;
+      background-color: #444a;
+      border-radius: 0.5em;
+      font-weight: bold;
+      line-height: 0.5em;
+      font-family: "Quicksand", sans-serif;
+      font-size: 1rem;
+      color: white;
+      position: fixed;
+      width: 100%;
+      scroll-behavior: smooth;
+    }
+    

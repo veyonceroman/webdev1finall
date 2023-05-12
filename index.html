@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <title>Index</title>
+</head>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="contact.html">Place an Order </a>
+  <a href="gallery.html">Gallery</a>
+</div>
+
+<body>
+  <div class="header">
+    <h1>Yartiza's Bakery Shop </h1>
+    <br> <br>
+
+    <div class="row">
+      <div class="column">
+
+        <br>
+        <p>Welcome to Yaritza's Cakes and Cupcakes Bakery shops web page! where we specialized in fresh baked cakes, and cupcakes. These baked goods that are sure to delight your senses.
+          From the moment you walk in, the warm and inviting aroma of our baked treats will tantalize your taste buds and make your mouth water. We are located in Chicago Illinois. Feel free to come in to book an order or place an order using the order form! </p>
+
+        <br>
+        <br>
+        <br>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="images/bakerymockup2.png" alt="mockup1" style="width:90%">
+      </div>
+      <div class="column">
+        <img src="images/bakerymockup.png" alt="mockup1" style="width:80%">
+        <br> <br> <br> <br> <br>
+      </div>
+    </div>
+
+    <br>
+
+    <main>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+
+          <img src="images/logo.png" style="width:75%">
+
+        </div>
+
+        <center>
+          <div class="mySlides fade">
+
+            <img src="images/cake2.png" style="width:60%">
+
+          </div>
+        </center>
+
+        <div class="mySlides fade">
+
+          <img src="images/cake5.png" style="width:60%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+          <img src="images/cake12.png" style="width:57%">
+
+        </div>
+        <div class="mySlides fade">
+
+          <img src="images/cake4.png" style="width:55%">
+
+        </div>
+        <div class="mySlides fade">
+
+          <img src="images/cake1.png" style="width:73%">
+
+        </div>
+
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {
+            slideIndex = 1
+          }
+          if (n < 1) {
+            slideIndex = slides.length
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+      </script>
+
+      <br> <br> <br>
+
+      <div class="row">
+        <div class="column">
+            <h2>VIRAL HEART SHAPED CAKE</h2>
+            <br>
+          <img src="images/heart.jpg" alt="heartcake" style="width:61%">
+        </div>
+        <div class="column">
+            <h2>DAILY GOODS </h2>
+            <br> 
+            <img src="images/giphy.gif" style="width:150%">
+        </div>
+        <div class="column">
+            <br> 
+            <h2>DAILY GOODS </h2>
+            <br>
+            <img src="images/sweets.jpg" alt="sweets" style="width:63%">
+      </div>
+    </div>
+
+
+        <br> <br> <br>
+
+    <footer>
+      <p>&copy; 2023 Veyonce Roman </p>
+    </footer>
+
+    <right><a href="#TOP">Back to top </a></right>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+*{
+  padding: 10px;
+  box-sizing: border-box;
+  font-family:'Lora';
+}
+/* Navigation menu */
+  
+  .topnav {
+    overflow: hidden;
+  
+    }
+    
+    .topnav a {
+    float: left;
+    color:  #4db5fa;;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+    
+    .topnav a:hover {
+    background-color: pink;
+    color: white;
+    }
+    
+    .topnav a.active {
+    background-color:  #4db5fa;
+    color: white;
+    }
+
+
+/* Style inputs  */
+input[type=text], select, textarea {
+  text-align: center;
+    width: 100%; 
+    padding: 20px;   
+    border: 20px; 
+    box-sizing: border-box; 
+    resize: vertical; 
+  }
+  
+  /*the submit button  */
+  input[type=submit] {
+    background-color: 
+    #f794ba;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  /*  mouse over the submit button */
+  input[type=submit]:hover {
+    background-color: 
+    #a98bf7;
+  }
+
+  .container {
+    
+    background-color: #4db5fa;
+    padding:12px;
+  }
+
+    
+  footer {
+    text-align: center;
+    padding: 0.1em;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  .back-to-top {
+    text-align: right;
+    text-decoration: none;
+    padding: 3em;
+    background-color: #444a;
+    border-radius: 0.5em;
+    font-weight: bold;
+    line-height: 0.5em;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    color: white;
+    position: fixed;
+    width: 100%;
+    scroll-behavior: smooth;
+  }
+  
